@@ -1,10 +1,17 @@
 package com.college.education.collegedemo.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class College {
+	
+	@Id
 	private String clName;
 	private String clGroups;
     private String clCity;
     private String clPhoneNo;
+    
 	public College() {
 		super();
 	}

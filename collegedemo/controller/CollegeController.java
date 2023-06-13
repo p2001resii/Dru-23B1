@@ -16,7 +16,7 @@ import com.college.education.collegedemo.service.CollegeService;
 
 @RestController
 public class CollegeController {
-	
+
 	@Autowired
 	CollegeService cs;
 	
@@ -24,6 +24,7 @@ public class CollegeController {
 	public List<College> getAllCollege(){
 		return cs.getAllCollege();
 	}
+	
 	
 	@RequestMapping("/College/{data}")
 	public College getCollege(@PathVariable("data") String clName) {
